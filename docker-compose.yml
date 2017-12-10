@@ -1,0 +1,11 @@
+version: '3'
+services:
+    master:
+        image: "haproxy:alpine"
+        ports:
+            - "49000:80"
+    node1:
+        image: "managedkaos/cherokee:latest"
+        ports:
+            - "49001:80"
+
